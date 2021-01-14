@@ -1,3 +1,24 @@
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+
+
+alias c='clear'
+alias e='exit'
+alias ~='cd ~'
+
+#########################
+# CD BACKSLASH SHORTHAND
+#########################
+alias .='cd ../'
+alias cd..="cd .."
+alias ..='cd ../../'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
 
 alias dcup!="cd laradock;dc up -d nginx mysql phpmyadmin php-worker laravel-horizon redis redis-webui;cd ..;echo ''; echo 'Website: http://localhost'; echo 'Phpmyadmin: http://localhost:8081 root:root'; echo 'Redis: http://localhost:9987 laradock:laradock'"
 alias dcrm!="cd laradock;dcrm;cd .."
