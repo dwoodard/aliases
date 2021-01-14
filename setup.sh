@@ -1,1 +1,1 @@
-ln -s .bash_aliases_file ~/.bash_aliases
+ln -s ~/aliases/.bash_aliases_file ~/.bash_aliases
