@@ -1,6 +1,8 @@
 function laradock(){
 	git clone https://github.com/Laradock/laradock.git 
 	mkdir data
+	mkdir -p data/mysql
+	mkdir -p data/redis
 	cd laradock 
 	pwd
 	cp env-example .env
@@ -36,6 +38,6 @@ alias ..='cd ../../'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
 
-alias dcup!="cd laradock;dc up -d nginx mysql phpmyadmin php-worker laravel-horizon redis redis-webui;cd ..;echo ''; echo 'Website: http://localhost'; echo 'Phpmyadmin: http://localhost:8081 root:root'; echo 'Redis: http://localhost:9987 laradock:laradock'"
+alias dcup!="cd laradock;docker-compose up -d nginx mysql phpmyadmin php-worker laravel-horizon redis redis-webui;cd ..;echo ''; echo 'Website: http://localhost'; echo 'Phpmyadmin: http://localhost:8081 root:root'; echo 'Redis: http://localhost:9987 laradock:laradock'"
 alias dcrm!="cd laradock;dcrm;cd .."
 
