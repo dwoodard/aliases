@@ -44,3 +44,32 @@ alias dcup!="cd laradock;docker-compose up -d nginx mysql phpmyadmin php-worker 
 alias dcrm!="cd laradock;dcrm;cd .."
 alias dcexec="docker exec -it laradock_workspace_1 bash"
 
+
+#########################
+# GIT
+#########################
+
+alias gs='git status'
+alias gr='git reset --hard HEAD'
+alias ga='git add . && git status'          # specify additional files to be tracked in project
+alias gb='git branch'       # local working branches
+alias gc='open -a SourceTree .'       # commit added files
+alias gd='git diff --color-words'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glogb="git log --decorate --oneline master.." #branch_name
+alias gcm="git commit -m"
+
+alias gsur='git submodule update --recursive'
+alias gsuri='git submodule update --recursive --init '
+alias gca='git commit -am'  # commit all tracked files
+alias gp='git push'
+alias gf='git fetch -v'     # verbose fetch
+alias gm='git merge --no-ff -v'
+alias gmom='git fetch;git merge origin/master'
+
+
+alias master="git checkout master"
+alias gpo="git push -u origin " #feature_branch_name
+
+alias gc!="git add . && git commit -m '"
+
