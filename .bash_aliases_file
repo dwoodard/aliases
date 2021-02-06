@@ -73,3 +73,18 @@ alias gpo="git push -u origin " #feature_branch_name
 
 alias gc!="git add . && git commit -m '"
 
+
+#########################
+# Docker
+#########################
+alias ankor="git svn clone https://github.com/dwoodard/ankor.git/trunk/dist/ -r HEAD ankor;mv ankor/* .;rm -rf ankor"
+alias dc="docker-compose"
+alias dcup="docker-compose up -d"
+alias dcdown="docker-compose down"
+# alias dcexec="docker exec -it web bash;"
+alias dcexec="docker exec -it laradock_workspace_1 bash"
+alias dcrm="docker-compose stop && docker ps -aqf status=exited|xargs docker rm"
+alias drm="docker ps -aqf status=exited|xargs docker rm"
+alias dps="docker ps -a"
+#docker stop $(docker ps -a -q)
+#docker rm $(docker ps -a -q)
